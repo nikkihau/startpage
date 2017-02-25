@@ -5,31 +5,36 @@
 
   var config = {
     categories: [
-      { name: "Google", commands: [
-        { key: 'd', name: 'Drive', url: 'https://drive.google.com/drive', search: '/search?q=' },
-        { key: 'g', name: 'Gmail', url: 'https://gmail.com', search: '/#search/' },
-        { key: 'k', name: 'Keep', url: 'https://keep.google.com', search: '/#search/text=' },
-        { key: 'nt', name: 'Netflix', url: 'https://www.netflix.com', search: '/search?q=' },
+      { name: "General", commands: [
         { key: 'y', name: 'YouTube', url: 'https://www.youtube.com', search: '/results?search_query=' },
+        { key: 'g', name: 'Gmail', url: 'https://gmail.com', search: '/#search/' },
+        { key: 'd', name: 'Drive', url: 'https://drive.google.com/drive', search: '/search?q=' },
+        { key: 'm', name: 'Messenger', url: 'https://messenger.com', search: '/search?q=' },
       ] },
       { name: "Devel", commands: [
-        { key: 'b', name: 'Bitbucket', url: 'https://bitbucket.com', search: '/search?q=' },
         { key: 'gh', name: 'GitHub', url: 'https://github.com', search: '/search?q=' },
+        { key: 'b', name: 'Bitbucket', url: 'https://bitbucket.com', search: '/search?q=' },
       ] },
-      { name: "News", commands: [
-        { key: 'c', name: 'CNN', url: 'http://cnn.com', search: '/search/?text=' },
-        { key: 'n', name: 'NYTimes', url: 'http://www.nytimes.com', search: '/search/sitesearch/#/' },
-        { key: 'f', name: 'Folha', url: 'http://folha.com.br', search: '' },
-        { key: 'r', name: 'Reddit', url: 'http://www.reddit.com', search: '/search?q=' },
-        { key: 't', name: 'O Tempo', url: 'http://otempo.com.br', search: '/busca-7.10677?q=' },
+      { name: "Reddit", commands: [
+        { key: 'rr', name: '/r/frontpage', url: 'http://www.reddit.com', search: '/search?q=' },
+        { key: 'a', name: '/r/AskReddit', url: 'http://www.reddit.com/r/askreddit', search: '/search?q=' },
+        { key: 'u', name: '/r/unixporn', url: 'http://www.reddit.com/r/unixporn', search: '/search?q=' },
+        { key: 'm', name: '/r/upmo', url: 'http://www.reddit.com/r/upmo', search: '/search?q=' },
+        { key: 'e', name: '/r/emacs', url: 'http://www.reddit.com/r/emacs', search: '/search?q=' },
+        { key: 'v', name: '/m/vim', url: 'http://www.reddit.com/me/m/vim', search: '/search?q=' },
+        { key: 'l', name: '/r/linux', url: 'http://www.reddit.com/r/linux', search: '/search?q=' },
       ] },
-      { name: "Media/Tools", commands: [
-        { key: 's', name: 'Spotify', url: 'https://spotify.com', search: '/search?q=' },
-        { key: 'wa', name: 'Whatsapp', url: 'https://web.whatsapp.com', search: '#' },
+      { name: "University", commands: [
+        { key: 'p', name: 'Portal', url: 'https://portal.utoronto.ca/'},
+        { key: 'ta', name: 'CSC209', url: 'https://mcs.utm.utoronto.ca/~209/'},
+        { key: 'al', name: 'CSC263', url: 'https://mcs.utm.utoronto.ca/~263/'},
+        { key: 'en', name: 'CSC301', url: 'https://cslinux.utm.utoronto.ca/~301/index.html'},
+        { key: 'im', name: 'CSC420', url: 'http://www.cs.utoronto.ca/~fidler/teaching/2017/CSC420.html'},
+        { key: 'co', name: 'CSC488', url: 'https://mcs.utm.utoronto.ca/~peters43/488/'},
       ] },
       { name: "Education", commands: [
-        { key: 'ka', name: 'Khan Academy', url: 'https://www.khanacademy.org', search: '/search?page_search_query=' },
         { key: 'w', name: 'Wikipedia', url: 'https://en.wikipedia.org', search: '/wiki/' },
+        { key: 'f', name: 'StackOverflow', url: 'https://stackoverflow.com', search: '/search?q=' },
       ] },
     ],
 
@@ -55,7 +60,7 @@
     suggestionsLimit: 4,
 
     // open queries in a new tab.
-    newTab: true,
+    newTab: false,
 
     // the delimiter between the hours and minutes in the clock.
     clockDelimiter: ':',
