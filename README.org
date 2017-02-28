@@ -1,6 +1,6 @@
 * Startpage 
 
-Inspired by [[https://cadejscroggins.github.io/tilde/][Tilde]].
+Forked from [[https://github.com/aflavio/startpage][here]].
 
 
 ** Demo
